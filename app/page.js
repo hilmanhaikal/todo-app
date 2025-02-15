@@ -6,23 +6,23 @@ import TodoList from "./components/TodoList";
 export default function Home() {
   const [todos, setTodos] = useState([]);
 
-  // Load the to-do list from localStorage when the page loads
+  // Load from localStorage when the page loads
   useEffect(() => {
     const savedTodos = JSON.parse(localStorage.getItem("todos")) || [];
     setTodos(savedTodos);
   }, []);
 
-  // Save the to-do list to localStorage whenever it changes
+  // Save to localStorage whenever the list changes
   useEffect(() => {
     localStorage.setItem("todos", JSON.stringify(todos));
   }, [todos]);
 
-  // Add a new item to the to-do list
+  // Add a new item to the list
   const addTodo = (todo) => {
     setTodos([...todos, todo]);
   };
 
-  // Remove an item from the to-do list by its index
+  // Remove an item from the list
   const removeTodo = (index) => {
     const newTodos = todos.filter((_, i) => i !== index);
     setTodos(newTodos);
