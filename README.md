@@ -15,3 +15,5 @@ A simple to-do list app built with **Next.js 14**. It allows users to add, remov
 ✅ Save and restore tasks using `localStorage`  
 
 ![image](https://github.com/user-attachments/assets/dc290429-9c01-4deb-bf7b-b8ab9896fa16)
+![image](https://github.com/user-attachments/assets/454d74bf-20e8-4185-b0b1-4986f47f4c58)
+
